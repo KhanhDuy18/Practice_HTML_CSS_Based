@@ -1,0 +1,54 @@
+.bannerSection {
+  background-image: url("../images/Background-bannerSection1-SM.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: rem(536);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq($BREAKPOINT-SM) {
+    background-image: url("../images/Background-bannerSection1-MD.png");  
+  }
+}
+.bannerSection-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include mq($BREAKPOINT-SM) {
+    align-items: flex-start;
+    padding:0 8.4%;
+  }
+  @include mq($BREAKPOINT-LG) {
+    padding: 0;
+  }
+}
+.bannerSection-content .title,.quote{
+  font-family: $font-roboto;
+  font-style: normal;
+  letter-spacing: rem(0.2);
+  text-transform: capitalize;
+  text-align: center; 
+  @include mq($BREAKPOINT-SM) {
+    text-align: left;
+  }
+}
+.bannerSection-content .title {
+  font-weight: 600;
+  font-size: rem(20);
+  line-height: rem(30);
+  color: $color-orange-primary;
+}
+.bannerSection-content .quote {
+  font-weight: 700;
+  font-size: rem(40);
+  line-height: rem(47);
+  color: $color-black-primary;
+  @include mq($BREAKPOINT-LG) {
+    width: 70%;
+  }
+}
+.bannerSection-content .quote span{
+  color: $color-orange-primary;
+}

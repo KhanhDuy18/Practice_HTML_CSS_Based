@@ -1,0 +1,131 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  z-index: 5;
+}
+.header-wrapper {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: rem(16);
+  @include mq(370px, max) {
+    padding: rem(8);
+  }
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+  @include mq(370px, max) {
+    gap: rem(0);
+  }
+}
+.header-left img {
+  cursor: pointer;
+}
+.header-left-moreBtn {
+  @include mq($BREAKPOINT-SM) {
+    display: none;
+  }
+}
+.header-left-moreBtn img,
+.header-left-logo img {
+  @include mq(370px, max) {
+    width: 70%;
+  }
+}
+
+/*header right*/
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: rem(56);
+}
+.header-right-link {
+  display: flex;
+  gap: rem(56);
+}
+.header-right-link .linkItem {
+  text-decoration: none;
+  color: $color-black-1;
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(24);
+  cursor: pointer;
+  &:hover {
+    color: $color-orange-primary;
+  }
+}
+
+.header-right-startedBtn {
+  background-color: $color-orange-primary;
+  border: rem(1) solid $color-orange-primary;
+  box-shadow: 0 rem(2) 0 rgba(0, 0, 0, 0.043);
+  border-radius: rem(2);
+  padding: rem(8) rem(35);
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+
+  font-family: $font-roboto;
+  text-decoration: none;
+  font-size: rem(14);
+  line-height: rem(24);
+  color: $color-white-1;
+
+  @include mq(370px, max) {
+    padding: rem(4) rem(10);
+    font-size: rem(12);
+    line-height: rem(14);
+  }
+}
+.header-right-startedBtn img {
+  width: rem(15);
+  margin-left: rem(8);
+}
+.header-right-link {
+  @include mq($BREAKPOINT-SM, max) {
+    display: none;
+  }
+}
+
+.header-right-startedBtn {
+  background-color: $color-orange-primary;
+  border: rem(1) solid $color-orange-primary;
+  box-shadow: 0 rem(2) 0 rgba(0, 0, 0, 0.043);
+  border-radius: rem(2);
+  padding: rem(8) rem(35);
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+
+  font-family: $font-roboto;
+  text-decoration: none;
+  font-size: rem(14);
+  line-height: rem(24);
+  color: $color-white-1;
+
+  @include mq(370px, max) {
+    padding: rem(4) rem(10);
+    font-size: rem(12);
+    line-height: rem(14);
+  }
+}
+.header-right-startedBtn img {
+  width: rem(15);
+  margin-left: rem(8);
+}
+.header-right-link {
+  @include mq($BREAKPOINT-SM, max) {
+    display: none;
+  }
+}

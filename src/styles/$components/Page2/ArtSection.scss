@@ -1,0 +1,44 @@
+.ArtSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 rem(70) 0;
+  @include mq($BREAKPOINT-MD) {
+    padding: 0 0 rem(100) 0;
+  }
+}
+.ArtSection-title {
+  margin: rem(83) 0 rem(89);
+}
+.ArtSection-title-main,
+.ArtSection-title-sub {
+  font-family: $font-roboto;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: rem(0.2);
+}
+.ArtSection-title-main {
+  width: 100%;
+  overflow: hidden;
+  font-size: rem(40);
+  line-height: rem(47);
+  font-weight: 700;
+  margin-bottom: rem(12);
+}
+.ArtSection-title-main span {
+  color: #f79901;
+}
+.ArtSection-title-sub {
+  color: #f79901;
+  font-weight: 500;
+  font-size: rem(20);
+  line-height: rem(30);
+}
+.ArtSection-listArt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: rem(40);
+}

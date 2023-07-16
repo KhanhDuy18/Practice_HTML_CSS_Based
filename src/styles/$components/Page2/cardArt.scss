@@ -1,0 +1,73 @@
+.cardArt {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  align-content: center;
+  justify-content: center;
+  background: $color-white-1;
+  box-shadow: 0 rem(24) rem(56) rgba(157, 66, 0, 0.1);
+  border-radius: rem(20);
+  width: 96%;
+  @include mq($BREAKPOINT-MD) {
+    grid-template-columns: auto 35%;
+    grid-template-rows: auto;
+    gap: rem(60);
+
+  }
+  @include mq($BREAKPOINT-XL) {
+    width: 80%;
+  }
+}
+.cardArt-img {
+  width: 100%;
+  height: 100%;
+  @include mq($BREAKPOINT-MD) {
+    order: 2;
+  }
+}
+.cardArt-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: rem(20) rem(20) 0 0;
+}
+.cardArt-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: rem(24);
+  padding: rem(21) rem(16); 
+  font-family: $font-roboto;
+  font-style: normal;
+}
+.cardArt-content-title {
+  font-size: rem(24);
+  line-height: rem(28);
+  font-weight: 700;
+  color: #282828;
+}
+.cardArt-content-desc {
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(24);
+  color: #4d4d4d;
+  opacity: 0.6;
+}
+.cardArt-content-button{
+  width: fit-content;
+  padding: rem(8) rem(42);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: rem(8);
+
+  background: #f79901;
+  border: rem(1) solid #f79901;
+  box-shadow: 0 rem(2) 0 rgba(0, 0, 0, 0.043);
+  border-radius: rem(8);
+
+  font-size: rem(14);
+  line-height: rem(24);
+  text-decoration: none;
+  color: #fff;
+}

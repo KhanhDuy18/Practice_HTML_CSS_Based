@@ -1,0 +1,53 @@
+/* color variable đã fix ở merge request đầu tiên */
+.WWDSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-bottom: rem(115);
+}
+.WWDSection-title {
+  margin: rem(90) 0 rem(107);
+}
+.WWDSection-title-main,
+.WWDSection-title-sub {
+  font-family: $font-roboto;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: rem(0.2);
+}
+.WWDSection-title-main {
+  font-size: rem(40);
+  line-height: rem(47);
+  font-weight: 700;
+  margin-bottom: rem(12);
+}
+.WWDSection-title-main span {
+  color: #f79901;
+}
+.WWDSection-title-sub {
+  color: #f79901;
+  font-weight: 500;
+  font-size: rem(20);
+  line-height: rem(30);
+}
+.WWDSection-listCard{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: auto;
+    grid-template-rows: auto ;
+    gap: rem(48);
+    @include mq($BREAKPOINT-MD) {
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        padding-left:rem(12);
+        padding-right:rem(12);
+    }
+    @include mq($BREAKPOINT-LG) {
+      padding-left: 0;
+      padding-right: 0;
+  }
+
+}

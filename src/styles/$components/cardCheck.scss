@@ -1,0 +1,46 @@
+.cardCheck {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(32);
+  padding: rem(24) 0;
+  background-color: #fff;
+
+  box-shadow: 0 rem(24) rem(56) rgba(157, 66, 0, 0.1);
+  border-radius: rem(20);
+}
+.cardCheck-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: rem(5);
+  width: rem(100);
+  height: rem(100);
+}
+.cardCheck-type img {
+  border-radius: rem(5);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cardCheck .yes {
+  background: #f79901;
+  box-shadow: 0 rem(20) rem(30) rgba(255, 140, 76, 0.4);
+}
+.cardCheck .no {
+  background: #bdbdbd;
+}
+
+.cardCheck-desc {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(16);
+  line-height: rem(24);
+  letter-spacing: rem(0.1);
+  color: #4d4d4d;
+  width: 52%;
+  @include mq($BREAKPOINT-MD, min) {
+    width: auto;
+  }
+}

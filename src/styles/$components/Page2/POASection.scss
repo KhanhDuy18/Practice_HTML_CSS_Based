@@ -1,0 +1,49 @@
+.POASection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(70);
+  width: 100%;
+  height: 100%;
+  padding: rem(130) 13.6%;
+  background-color: #f2f2f2;
+}
+
+.POASection-title {
+  margin-bottom: rem(70);
+}
+.POASection-title-main,
+.POASection-title-sub {
+  font-family: $font-roboto;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: rem(0.2);
+}
+.POASection-title-main {
+  font-size: rem(40);
+  line-height: rem(47);
+  font-weight: 700;
+  margin-bottom: rem(12);
+}
+.POASection-title-main span {
+  color: #f79901;
+}
+.POASection-title-sub {
+  color: #f79901;
+  font-weight: 500;
+  font-size: rem(20);
+  line-height: rem(30);
+}
+
+.POASection-list {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  align-content: center;
+  gap: rem(30);
+  @include mq($BREAKPOINT-MD) {
+    grid-template-columns: auto auto;
+    gap: rem(24);
+  }
+}

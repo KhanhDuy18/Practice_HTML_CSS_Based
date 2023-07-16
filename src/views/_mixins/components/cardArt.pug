@@ -1,0 +1,15 @@
+mixin cardArt(img,title,desc)
+  <div class="cardArt">
+        <div class="cardArt-img">
+            +img(`${img}`,`${title}`)
+        </div>
+    
+        <div class="cardArt-content">
+            <h3 class="cardArt-content-title">!{title}</h3>
+            <p class="cardArt-content-desc">!{desc}</p>
+            <a class="cardArt-content-button" href="#">See more 
+                +img("images/iconRight.png","right")
+            </a>
+        </div>
+
+  </div>

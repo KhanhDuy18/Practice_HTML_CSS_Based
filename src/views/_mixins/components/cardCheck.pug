@@ -1,0 +1,13 @@
+mixin cardCheck(type,desc)
+  <div class="cardCheck">
+      if type ==="yes"
+        <div class="cardCheck-type yes">
+          +img("images/Iconyes.png","#")
+        </div>
+        <div class="cardCheck-desc"><h5>!{desc}</h5></div>
+      else if type === 'no'
+        <div class="cardCheck-type no">
+           +img("images/IconNO.png","#")
+        </div>
+        <div class="cardCheck-desc"><h5>!{desc}</h5></div>
+  </div>

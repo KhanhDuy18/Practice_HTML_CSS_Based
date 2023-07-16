@@ -1,0 +1,15 @@
+mixin cardPOA(type,numberImg,desc)
+  <div class="cardPOA">
+      if type ==="Advantage"
+        //- <div class="cardPOA-number Advan">
+        //-   +img(`${numberImg}`,`${type}`)    
+        //- </div>
+        +img(`${numberImg}`,`${type}`).cardPOA-number-advan
+        <div class="cardPOA-desc"><p>!{desc}</p></div>
+      else if type === 'Problem'
+        //- <div class="cardPOA-number Prob">
+        //-   +img(`${numberImg}`,`${type}`)
+        //- </div>
+        +img(`${numberImg}`,`${type}`).cardPOA-number-prob
+        <div class="cardPOA-desc"><p>!{desc}</p></div>
+  </div>

@@ -1,0 +1,54 @@
+.bannerSection2 {
+    background-image: url("../images/background-bannersection2-SM.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: rem(476);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mq($BREAKPOINT-SM, min) {
+      background-image: url("../images/background-bannersection2-MD.png");
+      background-position: center;
+    }
+  }
+  .bannerSection2-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .bannerSection2-content .title,.quote{
+    font-family: $font-roboto;
+    font-style: normal;
+    letter-spacing: rem(0.2);
+    text-transform: capitalize;
+    text-align: center; 
+  }
+  .bannerSection2-content .title {
+    font-weight: 600;
+    font-size: rem(20);
+    line-height: rem(30);
+    color: #f79901;
+    @include mq($BREAKPOINT-SM, min) {
+        color:#252B42;
+      }
+  }
+  .bannerSection2-content .quote {
+    font-weight: 700;
+    font-size: rem(40);
+    line-height: rem(47);
+    color: #252b42;
+  }
+  .bannerSection2-content span{
+    display: block;
+    background: #F79901;
+    width: 10%;
+    height: rem(4);
+
+    margin-top: rem(32);
+
+    @include mq($BREAKPOINT-SM, max) {
+        display: none;
+      }
+  }

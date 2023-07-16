@@ -1,0 +1,125 @@
+.footer {
+  background-color: #232120;
+  color: $color-white-1;
+  
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: rem(14);
+  line-height: rem(24);
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: rem(49);
+
+  padding: rem(49) rem(54);
+  @include mq(360px,max){
+    padding: rem(30) rem(32);
+  }
+  @include mq($BREAKPOINT-MD){
+    padding: rem(50) 7.5%;
+    flex-direction: row;
+  }
+  @include mq($BREAKPOINT-XL){
+    padding: rem(50) 19%;
+  }
+}
+.footer-logoInfor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: rem(35);
+}
+
+.footer-logoInfor-info p:first-child {
+  margin-bottom: rem(8);
+}
+.footer-link {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: rem(86);
+  @include mq(360px,max){
+    gap: rem(40);
+  }
+  @include mq($BREAKPOINT-LG){
+    margin: 0 14% 0 0;
+  }
+}
+.footer-link-title,.footer-download-title {
+  font-weight: 500;
+  font-size: rem(20);
+  line-height: rem(30);
+  letter-spacing: rem(0.2);
+  text-transform: capitalize;
+  margin-bottom: rem(30);
+}
+.footer-link-list{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap:rem(12);
+}
+.footer-link-list .listItem, .footer-coppyRight-list .listItem{
+  text-decoration: none;
+  color: #fff;
+}
+.footer-download-btn{
+  display: flex;
+  flex-direction: column;
+  gap:rem(30);
+}
+.footer-line{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: rem(13) 0 0;
+  padding: 0 8%;
+  @include mq($BREAKPOINT-LG){
+    padding: 0 1.8%;
+  }
+}
+.footer-line span{
+  opacity: 0.6;
+  border: rem(1) solid #FFFFFF;
+  width: 100%;
+}
+
+.footer-coppyRight{
+  padding: rem(18) 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  @include mq($BREAKPOINT-LG){
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(18) 1.8%;
+  }
+}
+.footer-coppyRight p{
+  font-size: rem(12);
+  @include mq($BREAKPOINT-LG){
+    font-size: rem(14);
+  }
+}
+.footer-coppyRight-list{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+.footer-coppyRight-list .listItem{
+  font-size: rem(12);
+  line-height: rem(24);
+  @include mq($BREAKPOINT-LG){
+    font-size: rem(14);}
+}
+.footer-coppyRight-list li:nth-child(2){
+  margin: 0 rem(32);
+}
